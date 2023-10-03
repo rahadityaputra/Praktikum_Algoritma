@@ -5,19 +5,13 @@ using namespace std;
 int main()
 {
 
+	// membuat beberapa variabel yang dibutuhkan
 	string username = "rahaditya";
 	string password = "123230095";
-	string tanggalMasuk1, namaBarang1, tanggalMasuk2, namaBarang2;
-	string cariBarang;
+	string tanggalMasuk1, namaBarang1, tanggalMasuk2, namaBarang2, cariBarang, isiUsername, isiPassword, kembaliMenu;
+	int stokBarang1, stokBarang2, menu, kesempatan = 3;
 
-	string kembaliMenu;
-	int stokBarang1, stokBarang2;
-	int menu;
-	int kesempatan = 3;
-
-	string isiUsername;
-	string isiPassword;
-
+	
 	cout << "Selamat datang" << endl;
 	printf("username = ");
 	cin >> isiUsername;
@@ -45,8 +39,7 @@ int main()
 			cin >> namaBarang1;
 			cout << "stok barang masuk (angka saja) = ";
 			cin >> stokBarang1;
-			cout << endl
-				 << endl;
+			cout << endl << endl;
 			cout << "tanggal baratng masuk (hh/bb) = ";
 			cin >> tanggalMasuk2;
 			cout << "nama barang = ";
