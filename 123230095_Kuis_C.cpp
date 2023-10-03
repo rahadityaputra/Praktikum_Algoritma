@@ -23,10 +23,9 @@ int main()
 		cout << "Silahkan pilih menu !" << endl;
 		cout << "1. Input barang dan stok" << endl;
 		cout << "2. Cek barang" << endl;
-		cout << "3. Cari barang yang masuk" << endl;
-
-		printf("Pilih menu : ");
-		scanf("%i", &menu);
+		cout << "3. Cari barang yang masuk" << endl << endl;
+		cout << "Pilih menu : ";
+		cin >> menu;
 
 		// user memilih menu , kasus ini menggunakan metode Switch
 		switch (menu)
@@ -47,18 +46,18 @@ int main()
 			cin >> stokBarang1;
 			break;
 		case 2:
-			cout << "anda belum input barang";
+			cout << "Kamu belum input barang";
 			break;
 		case 3:
-			cout << "anda belum input barang";
+			cout << "Kamu belum input barang";
 			break;
 		default:
-			cout << "kamu salah pilih menu";
+			cout << "Kamu salah pilih menu";
 		}
 	}
 	else
 	{
-		cout << "kamu salah masukkan username atau password";
+		cout << "Kamu salah masukkan username atau password";
 	}
 	return 0;
 }
