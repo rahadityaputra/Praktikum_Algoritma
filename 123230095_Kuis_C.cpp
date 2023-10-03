@@ -9,7 +9,7 @@ int main()
 	string username = "a";
 	string password = "a";
 	string tanggalMasuk1, namaBarang1, tanggalMasuk2, namaBarang2, cariBarang, isiUsername, isiPassword, kembaliMenu;
-	int stokBarang1, stokBarang2, menu, kesempatan = 3;
+	int stokBarang1, stokBarang2, menu;
 
 	// masukkan username dan password
 	printf("username = ");
