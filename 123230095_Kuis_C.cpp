@@ -2,6 +2,21 @@
 #include <stdio.h>
 using namespace std;
 
+void daftarBarang(int barang, string namaBarang, int stokBarang, string tanggalMasuk){
+	system("cls");
+	cout << "Tanggal barang "<< barang <<" masuk (hh/bb) \t= " << tanggalMasuk << endl;
+	cout << "Nama barang "<< barang <<" \t\t\t= " << namaBarang << endl;
+	cout << "Stok barang "<< barang <<" masuk (angka saja)= " << stokBarang << endl;
+}
+
+void menuPilihan(){
+	cout << "Silahkan pilih menu !" << endl;
+	cout << "1. Input barang dan stok" << endl;
+	cout << "2. Cek barang" << endl;
+	cout << "3. Cari barang yang masuk" << endl << endl;
+}
+
+
 int main()
 {
 
@@ -21,11 +36,7 @@ int main()
 
 	{
 		system("cls");
-		cout << "Silahkan pilih menu !" << endl;
-		cout << "1. Input barang dan stok" << endl;
-		cout << "2. Cek barang" << endl;
-		cout << "3. Cari barang yang masuk" << endl
-			 << endl;
+		menuPilihan();
 		cout << "Pilih menu : ";
 		cin >> menu;
 
@@ -65,11 +76,7 @@ int main()
 		if (kembaliMenu == "y")
 		{
 			system("cls");
-			cout << "Silahkan pilih menu !" << endl;
-			cout << "1. Input barang dan stok" << endl;
-			cout << "2. Cek barang" << endl;
-			cout << "3. Cari barang yang masuk" << endl
-				 << endl;
+			menuPilihan();
 			cout << "Pilih menu : ";
 			cin >> menu;
 
@@ -93,33 +100,16 @@ int main()
 				break;
 			case 2:
 				system("cls");
-				cout << "Tanggal barang 1 masuk (hh/bb) \t= " << tanggalMasuk1 << endl;
-				cout << "Nama barang 1 \t\t\t= " << namaBarang1 << endl;
-				cout << "Stok barang 1 masuk (angka saja)= " << stokBarang1 << endl;
-				cout << "Tanggal barang 2 masuk (hh/bb) \t= " << tanggalMasuk2 << endl;
-				cout << "Nama barang 2 \t\t\t= " << namaBarang2 << endl;
-				cout << "Stok barang 2 masuk (angka saja)= " << stokBarang2 << endl;
+				daftarBarang(1, namaBarang1, stokBarang1, tanggalMasuk1);
+				daftarBarang(2, namaBarang2, stokBarang2, tanggalMasuk2);
 				break;
 			case 3:
 				cout << "caei barang : " << endl;
 				cin >> cariBarang;
 
-				if (cariBarang == namaBarang1)
-				{
-					cout << "Tanggal barang 1 masuk (hh/bb) \t= " << tanggalMasuk1 << endl;
-					cout << "Nama barang 1 \t\t\t= " << namaBarang1 << endl;
-					cout << "Stok barang 1 masuk (angka saja)= " << stokBarang1 << endl;
-				}
-				else if (cariBarang == namaBarang2)
-				{
-					cout << "Tanggal barang 2 masuk (hh/bb) \t= " << tanggalMasuk2 << endl;
-					cout << "Nama barang 2 \t\t\t= " << namaBarang2 << endl;
-					cout << "Stok barang 2 masuk (angka saja)= " << stokBarang2 << endl;
-				}
-				else
-				{
-					cout << "barang yang anda cari tidak ada" << endl;
-				}
+				if (cariBarang == namaBarang1) daftarBarang(1, namaBarang1, stokBarang1, tanggalMasuk1);
+				else if (cariBarang == namaBarang2) daftarBarang(2, namaBarang2, stokBarang2, tanggalMasuk2);
+				else cout << "barang yang anda cari tidak ada" << endl;
 
 				break;
 			default:
@@ -133,11 +123,7 @@ int main()
 			if (kembaliMenu == "y")
 			{
 				system("cls");
-				cout << "Silahkan pilih menu !" << endl;
-				cout << "1. Input barang dan stok" << endl;
-				cout << "2. Cek barang" << endl;
-				cout << "3. Cari barang yang masuk" << endl
-					 << endl;
+				menuPilihan();
 				cout << "Pilih menu : ";
 				cin >> menu;
 
@@ -161,33 +147,16 @@ int main()
 					break;
 				case 2:
 					system("cls");
-					cout << "Tanggal barang 1 masuk (hh/bb) \t= " << tanggalMasuk1 << endl;
-					cout << "Nama barang 1 \t\t\t= " << namaBarang1 << endl;
-					cout << "Stok barang 1 masuk (angka saja)= " << stokBarang1 << endl;
-					cout << "Tanggal barang 2 masuk (hh/bb) \t= " << tanggalMasuk2 << endl;
-					cout << "Nama barang 2 \t\t\t= " << namaBarang2 << endl;
-					cout << "Stok barang 2 masuk (angka saja)= " << stokBarang2 << endl;
+					daftarBarang(1, namaBarang1, stokBarang1, tanggalMasuk1);
+					daftarBarang(2, namaBarang2, stokBarang2, tanggalMasuk2);
 					break;
 				case 3:
 					cout << "caei barang : " << endl;
 					cin >> cariBarang;
 
-					if (cariBarang == namaBarang1)
-					{
-						cout << "Tanggal barang 1 masuk (hh/bb) \t= " << tanggalMasuk1 << endl;
-						cout << "Nama barang 1 \t\t\t= " << namaBarang1 << endl;
-						cout << "Stok barang 1 masuk (angka saja)= " << stokBarang1 << endl;
-					}
-					else if (cariBarang == namaBarang2)
-					{
-						cout << "Tanggal barang 2 masuk (hh/bb) \t= " << tanggalMasuk2 << endl;
-						cout << "Nama barang 2 \t\t\t= " << namaBarang2 << endl;
-						cout << "Stok barang 2 masuk (angka saja)= " << stokBarang2 << endl;
-					}
-					else
-					{
-						cout << "barang yang anda cari tidak ada" << endl;
-					}
+					if (cariBarang == namaBarang1) daftarBarang(1, namaBarang1, stokBarang1, tanggalMasuk1);
+					else if (cariBarang == namaBarang2) daftarBarang(2, namaBarang2, stokBarang2, tanggalMasuk2);
+					else cout << "barang yang anda cari tidak ada" << endl;
 
 					break;
 				default:
@@ -202,11 +171,7 @@ int main()
 				if (kembaliMenu == "y")
 				{
 					system("cls");
-					cout << "Silahkan pilih menu !" << endl;
-					cout << "1. Input barang dan stok" << endl;
-					cout << "2. Cek barang" << endl;
-					cout << "3. Cari barang yang masuk" << endl
-						 << endl;
+					menuPilihan();
 					cout << "Pilih menu : ";
 					cin >> menu;
 
@@ -230,48 +195,24 @@ int main()
 						break;
 					case 2:
 						system("cls");
-						cout << "Tanggal barang 1 masuk (hh/bb) \t= " << tanggalMasuk1 << endl;
-						cout << "Nama barang 1 \t\t\t= " << namaBarang1 << endl;
-						cout << "Stok barang 1 masuk (angka saja)= " << stokBarang1 << endl;
-						cout << "Tanggal barang 2 masuk (hh/bb) \t= " << tanggalMasuk2 << endl;
-						cout << "Nama barang 2 \t\t\t= " << namaBarang2 << endl;
-						cout << "Stok barang 2 masuk (angka saja)= " << stokBarang2 << endl;
+						daftarBarang(1, namaBarang1, stokBarang1, tanggalMasuk1);
+						daftarBarang(2, namaBarang2, stokBarang2, tanggalMasuk2);
 						break;
 					case 3:
 						cout << "caei barang : " << endl;
 						cin >> cariBarang;
 
-						if (cariBarang == namaBarang1)
-						{
-							cout << "Tanggal barang 1 masuk (hh/bb) \t= " << tanggalMasuk1 << endl;
-							cout << "Nama barang 1 \t\t\t= " << namaBarang1 << endl;
-							cout << "Stok barang 1 masuk (angka saja)= " << stokBarang1 << endl;
-						}
-						else if (cariBarang == namaBarang2)
-						{
-							cout << "Tanggal barang 2 masuk (hh/bb) \t= " << tanggalMasuk2 << endl;
-							cout << "Nama barang 2 \t\t\t= " << namaBarang2 << endl;
-							cout << "Stok barang 2 masuk (angka saja)= " << stokBarang2 << endl;
-						}
-						else
-						{
-							cout << "barang yang anda cari tidak ada" << endl;
-						}
-
+						if (cariBarang == namaBarang1) daftarBarang(1, namaBarang1, stokBarang1, tanggalMasuk1);
+						else if (cariBarang == namaBarang2) daftarBarang(2, namaBarang2, stokBarang2, tanggalMasuk2);
+						else cout << "barang yang anda cari tidak ada" << endl;
 						break;
 					default:
 						cout << "haha" << endl;
 					}
 				}
-				else
-				{
-					cout << "yasudah" << endl;
-				}
+				else cout << "yasudah" << endl;
 			}
 		}
-	}else
-		{
-			cout << "Kamu salah masukkan username atau password";
-		}
+	}else cout << "Kamu salah masukkan username atau password";
 		return 0;
 	}
