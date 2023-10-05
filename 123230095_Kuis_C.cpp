@@ -3,7 +3,6 @@
 using namespace std;
 
 void daftarBarang(int barang, string namaBarang, int stokBarang, string tanggalMasuk){
-	system("cls");
 	cout << "Tanggal barang "<< barang <<" masuk (hh/bb) \t= " << tanggalMasuk << endl;
 	cout << "Nama barang "<< barang <<" \t\t\t= " << namaBarang << endl;
 	cout << "Stok barang "<< barang <<" masuk (angka saja)= " << stokBarang << endl;
@@ -36,6 +35,7 @@ int main()
 
 	{
 		system("cls");
+		cout << "Selamat Datang "<< isiUsername << endl;
 		menuPilihan();
 		cout << "Pilih menu : ";
 		cin >> menu;
@@ -104,9 +104,8 @@ int main()
 				daftarBarang(2, namaBarang2, stokBarang2, tanggalMasuk2);
 				break;
 			case 3:
-				cout << "caei barang : " << endl;
+				cout << "cari barang : " << endl;
 				cin >> cariBarang;
-
 				if (cariBarang == namaBarang1) daftarBarang(1, namaBarang1, stokBarang1, tanggalMasuk1);
 				else if (cariBarang == namaBarang2) daftarBarang(2, namaBarang2, stokBarang2, tanggalMasuk2);
 				else cout << "barang yang anda cari tidak ada" << endl;
@@ -151,7 +150,7 @@ int main()
 					daftarBarang(2, namaBarang2, stokBarang2, tanggalMasuk2);
 					break;
 				case 3:
-					cout << "caei barang : " << endl;
+					cout << "cari barang : " << endl;
 					cin >> cariBarang;
 
 					if (cariBarang == namaBarang1) daftarBarang(1, namaBarang1, stokBarang1, tanggalMasuk1);
@@ -199,7 +198,7 @@ int main()
 						daftarBarang(2, namaBarang2, stokBarang2, tanggalMasuk2);
 						break;
 					case 3:
-						cout << "caei barang : " << endl;
+						cout << "cari barang : " << endl;
 						cin >> cariBarang;
 
 						if (cariBarang == namaBarang1) daftarBarang(1, namaBarang1, stokBarang1, tanggalMasuk1);
